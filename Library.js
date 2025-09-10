@@ -36,3 +36,18 @@ function sendToWhatsApp(event) {
   window.open(url, "_blank").focus();
 }
 
+// QR generator✅
+function generateQR() {
+  const qrContainer = document.getElementById("qrcode");
+  qrContainer.innerHTML = ""; // clear old QR if generated again
+
+  new QRCode(qrContainer, {
+    text: "https://adarsh-library.vercel.app/", // your website link
+    width: 200,
+    height: 200,
+    colorDark: "#000000",
+    colorLight: "#ffffff"
+  });
+}
+
+
