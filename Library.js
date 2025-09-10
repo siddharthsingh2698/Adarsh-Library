@@ -14,7 +14,7 @@ function sendToWhatsApp(event) {
   const message = document.getElementById("message").value.trim();
   const plan = document.getElementById("planMessage").value;
 
-  const phone = "917307000615"; // 📌 Replace with your WhatsApp number
+  const phone = "919559493884"; // 📌 Replace with your WhatsApp number
 
   // ✅ Validate that a plan is selected
   if (!plan) {
@@ -35,3 +35,4 @@ function sendToWhatsApp(event) {
   // ✅ Open WhatsApp in new tab
   window.open(url, "_blank").focus();
 }
+
