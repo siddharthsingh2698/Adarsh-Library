@@ -24,16 +24,17 @@ function sendToWhatsApp(event) {
 
   // ✅ Build message text
   const text =
-    `📌 New Library Inquiry\n\n` +
-    `👤 Name: ${name}\n` +
-    `📧 Email: ${email}\n` +
-    `📅 Plan: ${plan}\n` +
-    `💬 Message: ${message}`;
+    ` New Library Inquiry\n\n` +
+    ` Name: ${name}\n` +
+    ` Email: ${email}\n` +
+    ` Plan: ${plan}\n` +
+    ` Message: ${message}`;
 
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 
   // ✅ Open WhatsApp in new tab
   window.open(url, "_blank").focus();
 }
+
 
 
