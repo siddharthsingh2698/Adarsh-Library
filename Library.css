@@ -1,0 +1,60 @@
+/* Extra styles */
+
+/* Highlight selected plan */
+.plan-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.plan-card input[type="radio"] {
+  margin-top: 0.25rem;
+}
+
+.plan-card input[type="radio"]:checked + div {
+  border-left: 4px solid #2563eb; /* blue border when selected */
+  padding-left: 1rem;
+}
+
+/* Gallery hover zoom */
+#gallery img {
+  transition: transform 0.3s ease;
+}
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Hero gradient */
+.hero-bg {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+/* Pricing highlight */
+.best-offer {
+  border: 2px solid #2563eb;
+  position: relative;
+}
+.best-offer::before {
+  content: "Best Value";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
